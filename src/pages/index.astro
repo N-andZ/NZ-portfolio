@@ -1,0 +1,36 @@
+---
+	import '../styles/styles.css';
+	import {ProjectsTable} from '../components/ProjectsTable';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>N&Z</title>
+	</head>
+	<body>
+
+		<nav class="wrapper" style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between;">
+			<div>
+				<h1>Alan - N&Z</h1>
+				<p>Software Engineer in the United States of America</p>
+			</div>
+
+			<div class="nav-box">
+				<a href="https://github.com/N-andZ" target="_blank"> Github </a>
+				<a> Contact </a>
+			</div>
+
+		</nav>
+
+		<section>
+			<ProjectsTable client:load/>
+
+
+		</section>
+
+	</body>
+</html>
